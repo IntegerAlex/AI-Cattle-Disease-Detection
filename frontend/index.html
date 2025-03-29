@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cattle Health Assistant</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+        
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .step {
+            background: #e8f5e9;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border: 1px solid #c8e6c9;
+        }
+
+        .mermaid {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Cattle Disease Assistant</h1>
+        <p>Helping farmers and veterinarians care for cattle</p>
+    </header>
+
+    <section class="workflow">
+        <h2>How It Works</h2>
+        
+        <div class="step">
+            <h3>1. Monitor Cattle Health</h3>
+            <p>Farmers use a smartphone app with smart neckbands that track:</p>
+            <ul>
+                <li>Oxygen levels</li>
+                <li>Heart rate</li>
+                <li>Activity levels</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>2. Check for Illness</h3>
+            <p>Take photos of symptoms like:</p>
+            <ul>
+                <li>Skin bumps (Lumpy Skin Disease)</li>
+                <li>Eye infections</li>
+                <li>Mouth blisters (Foot-and-Mouth Disease)</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>3. Get AI Analysis</h3>
+            <p>The system analyzes:</p>
+            <ul>
+                <li>Symptom photos</li>
+                <li>Vital signs from neckbands</li>
+                <li>Treatment history</li>
+            </ul>
+            <p>to identify potential health issues.</p>
+        </div>
+
+        <div class="step">
+            <h3>4. Veterinary Support</h3>
+            <p>Vets receive detailed reports and can:</p>
+            <ul>
+                <li>Review AI suggestions</li>
+                <li>Send treatment plans</li>
+                <li>Contact farmers directly</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="diagram">
+        <h2>Process Flow</h2>
+        <div class="mermaid">
+            graph TD
+                A[Farmer App] -->|Photos + Health Data| B(AI Analysis)
+                B -->|Results| C[Farmer]
+                B -->|Full Report| D[Veterinarian]
+                D -->|Treatment Plan| C
+        </div>
+    </section>
+
+    <footer>
+        <p>Created to improve cattle health through technology</p>
+    </footer>
+</body>
+</html>
+
